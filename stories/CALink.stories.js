@@ -5,6 +5,13 @@ import Style from "../styles/CALink";
 export default {
   title: "CALink",
   component: CALink,
+  parameters: {
+    docs: {
+      description: {
+        component: 'Version 1.0.2',
+      },
+    },
+  },
   argTypes: {
     type: {
       options: [
@@ -15,12 +22,27 @@ export default {
         "success",
       ],
       control: { type: "radio" },
+      defaultValue: { summary: "cta" },
+      description: "The type changes the look and feel of the Link",
     },
     size: {
       options: ["small", "medium", "large"],
       control: { type: "radio" },
+      defaultValue: { summary: "medium" },
+      description: "Based on the height the size will vary",
     },
-    disabled: { control: "boolean" },
+    disabled: {
+      control: "boolean",
+      defaultValue: { summary: false },
+      description: "Toggle between enabled and disabled state",
+    },
+    themeConfig: {
+      defaultValue: { summary: {} },
+      description: "design tokens",
+    },
+    name: {
+      description: "String",
+    },
   },
 };
 
@@ -41,8 +63,8 @@ export const Component = Template.bind({});
 
 Component.args = {
   type: "primary",
-  size: "small",
+  size: "medium",
   themeConfig: Style,
-  name: "CALink",
+  name: "Click Here",
   disabled: false,
 };

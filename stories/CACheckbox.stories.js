@@ -1,43 +1,45 @@
-import React from "react";
-import CARadioButton from "@credavenue/caradiobutton";
-import themeConfig from "../styles/CARadio";
+import CACheckbox from "@credavenue/cacheckbox";
+import { checkBoxStyle } from "../styles/CACheckbox";
 
 export default {
-  title: "CARadioButton",
-  component: CARadioButton,
+  title: "CACheckbox",
+  component: CACheckbox,
   parameters: {
     docs: {
       description: {
-        component: 'Version 1.0.6',
+        component: 'Version 1.0.3',
       },
     },
   },
   argTypes: {
-    disabled: {
-      control: "boolean",
-      defaultValue: { summary: false },
-      description: "Toggle between enabled and disabled state",
-    },
-    alert: {
-      control: "boolean",
-      description: "Toggle between normal and alert state",
-      defaultValue: { summary: false },
-    },
-    hovered: { control: "boolean" },
     size: {
       options: ["small", "medium", "large"],
       control: { type: "radio" },
       defaultValue: { summary: "medium" },
       description: "Based on the height the size will vary",
     },
+    disabled: {
+      control: "boolean",
+      defaultValue: { summary: false },
+      description: "Toggle between enabled and disabled state",
+    },
     checked: {
       control: "boolean",
       defaultValue: { summary: false },
       description: "Toggle between checked and unchecked state",
     },
+    indeterminate: {
+      control: "boolean",
+      defaultValue: { summary: false },
+      description: "Toggle between intermediate and normal state",
+    },
     themeConfig: {
       defaultValue: { summary: {} },
       description: "design tokens",
+    },
+    onClick: {
+      control: Function,
+      description: "Callback for click [type: (checked: boolean) => void]",
     },
     label: {
       description: "String",
@@ -49,43 +51,36 @@ export default {
 };
 
 const Template = ({
-  id,
+  checked,
+  onClick,
   label,
   caption,
-  disabled,
-  alert,
-  hovered,
   size,
-  onClick,
+  disabled,
+  indeterminate,
   themeConfig,
-  checked,
 }) => (
-  <CARadioButton
-    id={id}
+  <CACheckbox
+    checked={checked}
+    onClick={onClick}
     label={label}
     caption={caption}
-    disabled={disabled}
-    alert={alert}
-    hovered={hovered}
     size={size}
-    onClick={onClick}
+    disabled={disabled}
+    indeterminate={indeterminate}
     themeConfig={themeConfig}
-    checked={checked}
-  >
-    {undefined}
-  </CARadioButton>
+  />
 );
 
 export const Component = Template.bind({});
 
 Component.args = {
-  id: 22,
-  label: "Radio",
-  caption: "Caption",
-  disabled: false,
-  alert: false,
-  hovered: false,
-  size: "medium",
-  themeConfig: themeConfig,
   checked: false,
+  onClick: () => {},
+  label: "Label",
+  caption: "Caption",
+  size: "medium",
+  disabled: false,
+  indeterminate: false,
+  themeConfig: checkBoxStyle,
 };

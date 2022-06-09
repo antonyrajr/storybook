@@ -1226,10 +1226,22 @@
   resolved "https://registry.npmjs.org/@colors/colors/-/colors-1.5.0.tgz#bb504579c1cae923e6576a4f5da43d25f97bdbd9"
   integrity sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==
 
-"@credavenue/ca-core-icons@1.0.6":
-  version "1.0.6"
-  resolved "https://npm.pkg.github.com/download/@credavenue/ca-core-icons/1.0.6/dfd4e440470b76ab0706ad6399864305b760370221f49524f229542534447b5a#4abafd533bfdf1b166935801d6692bc8bf03d22e"
-  integrity sha512-wDFpu9lbDO1iLmkIhbhuCl+1xyBUyNmT/S7UNB26W/7hQvtPI1/cXgYFevfysq1Hlr+tWLlN/DSmlnPQT6Foxw==
+"@credavenue/ca-core-icons@1.0.8":
+  version "1.0.8"
+  resolved "https://npm.pkg.github.com/download/@credavenue/ca-core-icons/1.0.8/f8c4cecbd58cb84328726cfed401fa5b4ad551ba2181436898a6d723bff9b4d5#e8a70fe34203df5463689c20e5068c19a089c48c"
+  integrity sha512-3R2l9BhFMPghKYW/wVBltWPfjhq51Dd5+cLw3X6DR34ALxXGM67vhVsc4Y94HUIO4nJhumb0Ne9gEUQ9+HeJTw==
+  dependencies:
+    react "^18.1.0"
+    react-dom "^18.1.0"
+    react-native "^0.68.2"
+    react-native-vector-icons "^9.1.0"
+    react-scripts "^5.0.1"
+    typescript "^4.6.4"
+
+"@credavenue/ca-core-icons@1.1.1":
+  version "1.1.1"
+  resolved "https://npm.pkg.github.com/download/@credavenue/ca-core-icons/1.1.1/cb334573c3e9a9ded29880aeb6a54272127121776b2260eaa2f9c919d01eec38#19020bc4260772547d2b99593ed6c128e80cb23e"
+  integrity sha512-DK4FIINu/gT6CaTIAS5zm+lwwIE3SCOs/4mEcykwa+5F5El0JjZs19p8WjDpX/DOGz8lQTVUg/nD5abOk5HeZA==
   dependencies:
     react "^18.1.0"
     react-dom "^18.1.0"
@@ -1250,10 +1262,46 @@
     react-scripts "^5.0.1"
     typescript "^4.6.4"
 
-"@credavenue/caradiobutton@^1.0.2":
-  version "1.0.2"
-  resolved "https://npm.pkg.github.com/download/@credavenue/caradiobutton/1.0.2/c3dc7fbdb31035763fa25b8b7d65a786b534477bdbea04607e7641974b44aae8#fc5b5a0feeb50a594b3956d3d6d3d3986c464ac8"
-  integrity sha512-QNCXXMG0relQ2x258YrL3e8zORCMuOKwxJiwIYwBYQVemEih5z+nPKZSb7lUxgYhkvcubdkwdVe69tqWlg3u9A==
+"@credavenue/ca-core-icons@^1.1.2":
+  version "1.1.2"
+  resolved "https://npm.pkg.github.com/download/@credavenue/ca-core-icons/1.1.2/2e3b141af80cacf8658501be346819afa5ffab4f47c0fcb28459052d17a2c2a5#d04f166e3c504b51126b881c9c6cafc02b6308d6"
+  integrity sha512-65X9MCwKty1zA4Xtz0MSZnSRK3sq+MwnWcc1+bzK3CK9zAdXyrj61obVVCqnAMGR6qSqVLaItRxBM6zuiJIbYA==
+  dependencies:
+    react "^18.1.0"
+    react-dom "^18.1.0"
+    react-native "^0.68.2"
+    react-native-vector-icons "^9.1.0"
+    react-scripts "^5.0.1"
+    typescript "^4.6.4"
+
+"@credavenue/caavatar@^1.0.5":
+  version "1.0.5"
+  resolved "https://npm.pkg.github.com/download/@credavenue/caavatar/1.0.5/e13a4ce32b1466f897282c17efbf5f0f145372ff1f950797c65e514d4f370bac#9ced994144bc0af801ebc66dba827a90d70368e7"
+  integrity sha512-Ts/T2uVdsA7Fk+yuVilqTqFU6rRWRHe0nY7N5SXERucRvTISX58M4RcJ1TCPFFdl8lVDJHsPc7NQX+nbD6dGbg==
+  dependencies:
+    react "^18.1.0"
+    react-dom "^18.1.0"
+    react-native "^0.68.2"
+    react-scripts "5.0.1"
+    typescript "^4.4.2"
+
+"@credavenue/cacheckbox@^1.0.3":
+  version "1.0.3"
+  resolved "https://npm.pkg.github.com/download/@credavenue/cacheckbox/1.0.3/361af1480e9fb2ecc3ee378ab749a1dd676c5caf88204b6bb8ea002ca58fa36e#1ce042867ae821ad62ff394eeb03fe099701a1e3"
+  integrity sha512-O7xPl8kkbD7UX92/lOtmGVQTt2fSYs+Fi7Te9nOvmAugyRPU1ObhuFjQ3iQpI8AN5FfStbPOkAQoUJe1VwMWUQ==
+  dependencies:
+    "@credavenue/ca-core-icons" "1.1.1"
+    react "^18.1.0"
+    react-dom "^18.1.0"
+    react-native "^0.68.2"
+    react-native-web-hover "^0.2.9"
+    react-scripts "5.0.1"
+    typescript "^4.4.2"
+
+"@credavenue/caradiobutton@^1.0.6":
+  version "1.0.6"
+  resolved "https://npm.pkg.github.com/download/@credavenue/caradiobutton/1.0.6/f57d7a998aa94abfd0dd4ac0630ab85afcafd1c496d0d031b4771f024831aa91#5b828e4ea155695d46fb1a29bff3020883e8e95c"
+  integrity sha512-LIN+iStRWOrslX7ic3DtflYwCpKkiLOY6br2kRW0+Dl7VV1ZXAGOrMBYwcVJvhNAxP3nD+NuORRl5BzjnBqwPg==
   dependencies:
     react "^18.1.0"
     react-dom "^18.1.0"
@@ -1262,12 +1310,23 @@
     react-scripts "5.0.1"
     typescript "^4.4.2"
 
-"@credavenue/core-cabutton@2.2.8":
-  version "2.2.8"
-  resolved "https://npm.pkg.github.com/download/@credavenue/core-cabutton/2.2.8/fbf25234ab83eefadb1db2c0fd90fe60a34da3de7afe6899434598650572cea2#32203ee5b884fe0b7717c931925ae96eb7816dc0"
-  integrity sha512-n/SIDIUtOfSh5dylJ2MuCiCSCE4194JnKkc/OXW5/Ar0qHGFLTsRNX2uNcocZxF/EImqgxrljaYK7Tex3/XDjg==
+"@credavenue/catags@^1.0.3":
+  version "1.0.3"
+  resolved "https://npm.pkg.github.com/download/@credavenue/catags/1.0.3/79f5df49d66e5519a4ba1b8ec9821593d7c6897160352911101a52ef56d15823#025a60fa0b788ab406d3e4325d267c43e19aa263"
+  integrity sha512-3Gcs3sAWLBFON7Ho8aH9TWqYQGNM4gssL46d4B1YXJEkKf1Tv7cdW/jdzf4lhV7QPzR2MOq++HyApcQ9hS3MPQ==
   dependencies:
-    "@credavenue/ca-core-icons" "^1.0.5"
+    react "^18.1.0"
+    react-dom "^18.1.0"
+    react-native "^0.68.2"
+    react-scripts "5.0.1"
+    typescript "^4.4.2"
+
+"@credavenue/core-cabutton@^3.3.1":
+  version "3.3.1"
+  resolved "https://npm.pkg.github.com/download/@credavenue/core-cabutton/3.3.1/91f6d3d4dea63e737efee37480318a3b8cc1ca6fc91f32898e43f0135e73ff36#ab954ee4209d5bc0bcc4fce828f31c4e31f0d64e"
+  integrity sha512-o1CMcc8f0R3+b9wuqdKT5If2N/9TyAFxhgJkr2JcU7Dpu9aLFG4cRPweCqxfON84GRIXcHTlckkRP2+KsBKBaA==
+  dependencies:
+    "@credavenue/ca-core-icons" "1.0.8"
     react "^18.1.0"
     react-dom "^18.1.0"
     react-native "^0.68.2"
@@ -1275,15 +1334,27 @@
     react-scripts "^5.0.1"
     typescript "^4.6.4"
 
-"@credavenue/core-input-field@1.0.3":
-  version "1.0.3"
-  resolved "https://npm.pkg.github.com/download/@credavenue/core-input-field/1.0.3/081e6f430cf6af662b672f562360c67644a3c0ecac84684ae9795ce995433d4b#6a0e4317289cb0f9b3e1112319f0a250a3d6547e"
-  integrity sha512-dhWSW8eAfH3BBzQkxNYb+Nsk7K84C6ZAKdDI+L0xkPqr9VtqG3oMXjnBk0V1jjpBKITJkI5MPQA90loET2UqTw==
+"@credavenue/core-input-field@1.0.4":
+  version "1.0.4"
+  resolved "https://npm.pkg.github.com/download/@credavenue/core-input-field/1.0.4/96cf884a2e323f5742831279a98aaa04217bf49bbafd6d6f03cc513df971dcaf#25e2021882f3ab1dff17660b1c4d6c3027b44dae"
+  integrity sha512-/Y4Ttb5JtvHuHw36Q7ZeNvU2HWE5MBeTWgXv21TVi03F+EcqYo6e6txbmul1S/xgXW28uw73QpwRnR0p6ZKOmg==
   dependencies:
     "@credavenue/ca-core-icons" "^1.0.5"
     "@credavenue/core-link" "^1.0.0"
     react "^18.1.0"
     react-dom "^18.1.0"
+    react-native-web-hover "^0.2.9"
+    react-scripts "5.0.1"
+    typescript "^4.4.2"
+
+"@credavenue/core-link@1.0.2":
+  version "1.0.2"
+  resolved "https://npm.pkg.github.com/download/@credavenue/core-link/1.0.2/f0cdf61be619ee696e28d290c8953e965f96fc8c8c1b7b808101df06afb641a0#a7fcd3ae43e1aab2c06da0c776040406a5dd98e4"
+  integrity sha512-ZlAklvXX2lRHgNMbmAEFk55igEBHwI/tqsbBmCrIh4L1Bc8QRzUPBu6TAm5ObJl/ofb073Oc8geYprxB1Fo1Rg==
+  dependencies:
+    react "^18.1.0"
+    react-dom "^18.1.0"
+    react-native "^0.68.2"
     react-native-web-hover "^0.2.9"
     react-scripts "5.0.1"
     typescript "^4.4.2"
@@ -1300,10 +1371,10 @@
     react-scripts "5.0.1"
     typescript "^4.4.2"
 
-"@credavenue/core-switch@1.0.3":
-  version "1.0.3"
-  resolved "https://npm.pkg.github.com/download/@credavenue/core-switch/1.0.3/e29664ae54586acb2ec0e90fdb6842051b70d4335b43a83b3ecb2848f3d570de#a10071666872e09de0074ca16c4bbab9f719788e"
-  integrity sha512-L1vHey1a/s1C9sjyOy6CUZVJhwA7FOsV4UHlk5e0Z9wpgfaqsbGo1ki/H9KQOeJaagbyRQbzOXN6G7b2/f6k6g==
+"@credavenue/core-switch@^1.0.6":
+  version "1.0.6"
+  resolved "https://npm.pkg.github.com/download/@credavenue/core-switch/1.0.6/40e1aa571a67ba5ff14ed562cc36cf109f03af8b37041357163238cfa95d1895#66c7dc9010c57714c0661c5c6a50092690e5017f"
+  integrity sha512-eeupclWtzv3AreiH02T14BClC6h+13lpr411DFIsDI/19gL8I61p/9u58lw2qhC5GDP4Yrn3PI6HFwASZ/WTKg==
   dependencies:
     "@react-native-community/masked-view" "^0.1.11"
     create-react-class "^15.7.0"
@@ -7128,6 +7199,18 @@ copy-to-clipboard@^3.3.1:
   dependencies:
     toggle-selection "^1.0.6"
 
+copy-webpack-plugin@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.npmjs.org/copy-webpack-plugin/-/copy-webpack-plugin-11.0.0.tgz#96d4dbdb5f73d02dd72d0528d1958721ab72e04a"
+  integrity sha512-fX2MWpamkW0hZxMEg0+mYnA40LTosOSa5TqZ9GYIBzyJa9C3QUaMPSE2xAi/buNr8u89SfD9wHSQVBzrRa/SOQ==
+  dependencies:
+    fast-glob "^3.2.11"
+    glob-parent "^6.0.1"
+    globby "^13.1.1"
+    normalize-path "^3.0.0"
+    schema-utils "^4.0.0"
+    serialize-javascript "^6.0.0"
+
 core-js-compat@^3.21.0, core-js-compat@^3.22.1, core-js-compat@^3.8.1:
   version "3.22.8"
   resolved "https://registry.npmjs.org/core-js-compat/-/core-js-compat-3.22.8.tgz#46fa34ce1ddf742acd7f95f575f66bbb21e05d62"
@@ -9499,6 +9582,17 @@ globby@^11.0.2, globby@^11.0.4, globby@^11.1.0:
     ignore "^5.2.0"
     merge2 "^1.4.1"
     slash "^3.0.0"
+
+globby@^13.1.1:
+  version "13.1.1"
+  resolved "https://registry.npmjs.org/globby/-/globby-13.1.1.tgz#7c44a93869b0b7612e38f22ed532bfe37b25ea6f"
+  integrity sha512-XMzoDZbGZ37tufiv7g0N4F/zp3zkwdFtVbV3EHsVl1KQr4RPLfNoT068/97RPshz2J5xYNEjLKKBKaGHifBd3Q==
+  dependencies:
+    dir-glob "^3.0.1"
+    fast-glob "^3.2.11"
+    ignore "^5.2.0"
+    merge2 "^1.4.1"
+    slash "^4.0.0"
 
 globby@^9.2.0:
   version "9.2.0"
