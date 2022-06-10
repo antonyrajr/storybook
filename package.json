@@ -12,6 +12,7 @@
     "@credavenue/core-input-field": "1.0.4",
     "@credavenue/core-link": "1.0.2",
     "@credavenue/core-switch": "^1.0.6",
+    "express": "^4.18.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
@@ -25,7 +26,8 @@
     "remove-unwanted": "rm -rf build/dts/App.d.ts && rm -rf build/dts/index.d.ts",
     "build": "yarn remove react-native && yarn gen-ts && yarn remove-unwanted && rollup -c && yarn add react-native",
     "storybook": "rm -rf node_modules/.cache/storybook && start-storybook -p 6006 -c .storybook watch-css -s ./src",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "server": "node storybook-static/app.js"
   },
   "eslintConfig": {
     "extends": [
@@ -87,7 +89,6 @@
     "copy-webpack-plugin": "^11.0.0",
     "customize-cra": "^1.0.0",
     "react-app-rewired": "^2.2.1",
-    "react-native": "^0.68.2",
     "react-native-web": "^0.17.7",
     "regenerator-runtime": "^0.13.9",
     "rollup": "^2.75.5",
